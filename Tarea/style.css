@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Pixel';
+  src: url(Fonts/PixelOperator-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+/* Reset rápido */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pixel', sans-serif;
+  color: #fff;
+  background-color: #000;
+  text-shadow: 2px 2px black;
+}
+
+.text-bg {
+  background: #004dd9;
+  width: 100%;
+  padding: 2em 0; /* Optional: vertical spacing */
+}
+
+.text {
+  font-size: 1.3em;
+  background: none;      /* Remove background from .text */
+  text-shadow: 2px 2px black;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: left;
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+
+.text h2 {
+  font-size: 2em
+}
+
+/* Fondo con GIF o imagen estática */
+.hero {
+  /* background-image: url('img/key-art.gif'); /* puedes usar .jpg también */
+  background-color: #342db5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  justify-content: center;
+  width: 100%;
+  font-family: Pixel, sans-serif;
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  gap: 5em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-shadow: 3px 3px black;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #9f9f9f;
+}
+
+.icon-user {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.hero-content {
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #F5008F;
+  padding: 0.7em 1.5em;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #DB00F5;
+}
+
+/* Video section */
+.video-section {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative; /* Ensure stacking context */
+  z-index: 10;
+}
+
+.video-embed-bg {
+  background: #004dd9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  width: 100%;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 3em;
+  background-color: #004dd9;
+  margin-top: -46px;
+  position: relative;
+  z-index: 2;
+}
+
+.cards h2 {
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.cards-row {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+.card {
+  background-color: #222;
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  padding: 2em;
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+}
+
+.social a {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social a:hover {
+  color: #e1306c; 
+  transform: scale(1.2);
+}
+
+.image-overlap {
+  position: relative;
+  display: inline-block; /* or block, as needed */
+}
+
+.background-img {
+  display: block;
+  width: 100%; /* or set a fixed width */
+}
+
+.logo-img {
+  position: absolute;
+
+  top: 50%;      /* Center vertically */
+  left: 50%;     /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  width: 800px;  /* Adjust size as needed */
+  pointer-events: none; /* Optional: allows clicks to pass through */
+  
+}
