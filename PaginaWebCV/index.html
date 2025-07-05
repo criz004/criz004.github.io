@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="battle-container">
+    <div class="hp-bar">
+      <span>HP</span>
+      <div class="hp-fill">
+        <div class="hp-inner"></div>
+      </div>
+      <span>20/20</span>
+    </div>
+    
+    <div class="dialog-box" id="text"></div>
+    
+    <div class="battle-menu">
+      <button onclick="mostrarSeccion('perfil')"><span class="heart">♥</span> FIGHT</button>
+      <button onclick="mostrarSeccion('proyectos')">ACT</button>
+      <button onclick="mostrarSeccion('habilidades')">ITEM</button>
+      <button onclick="mostrarSeccion('contacto')">MERCY</button>
+      <button onclick="descargarPDF()">DESCARGA MI CV</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
